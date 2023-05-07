@@ -1,0 +1,13 @@
+version: '3'
+
+services:
+  atcoder:
+    build:
+      context: .
+      dockerfile: .devcontainer/Dockerfile
+    tty: true
+    volumes:
+      - .:/code
+      - ./devcontainer/.bashrc:/root/.bashrc
+    ports:
+      - "8000:8000"
