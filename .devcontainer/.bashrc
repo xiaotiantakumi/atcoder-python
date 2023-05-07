@@ -11,7 +11,7 @@ function init {
         filename="main.py"
         touch $filename
     done
-    cd dir_path="/code/works/abc/$contest/a"
+    cd "/code/works/abc/${contest}/a"
     code main.py
 }
 
