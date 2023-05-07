@@ -1,9 +1,14 @@
 {
-	"name": "AtcoderWorkspace",
+	"name": "atcoder-python",
 	"dockerComposeFile": [
 		"../docker-compose.yml"
 	],
-	"extensions": ["ms-python.python"],
+	"customizations": {
+	"extensions": [
+        "ms-python.python",
+		"ms-azuretools.vscode-docker"
+    ]
+	},
 	"service": "atcoder",
 	"workspaceFolder": "/code"
 }
